@@ -25,7 +25,7 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top ">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid d-flex ">
                 <a class="navbar-brand " href="#"><img src="./assets/img/logotipo.png" alt="" srcset=""> </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -71,7 +71,7 @@
 
             </div>
         </section>
-        <section>
+        <section class="mt-5">
             <div class="d-flex justify-content-center align-items-center">
                 <p class="textHighlight text-center">Aproveite o poder da inteligência artificial para otimizar
                     seu consumo de
@@ -79,7 +79,7 @@
                     custos de maneira inteligente e personalizada.</p>
             </div>
         </section>
-        <section id="como-funciona">
+        <section id="como-funciona" class="mTsection">
             <div class="container">
                 <div class="d-flex justify-content-center align-items-center">
                     <h2 class="textHighlight text-center">Como funciona?</h2>
@@ -94,27 +94,40 @@
                                 aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
                                 aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="10000">
                                 <img src="./assets/img/bannerPrincipal.png" class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>First slide label</h5>
-                                    <p>Some representative placeholder content for the first slide.</p>
+                                    <p>conecte seus eletros e cadastre sua fatura de energia</p>
                                 </div>
                             </div>
                             <div class="carousel-item" data-bs-interval="2000">
                                 <img src="./assets/img/bannerPrincipal.png" class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Second slide label</h5>
-                                    <p>Some representative placeholder content for the second slide.</p>
+                                    <p>com ajuda de IA, monitore seu consumo de energia diretamente do celular</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="./assets/img/bannerPrincipal.png" class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Third slide label</h5>
-                                    <p>Some representative placeholder content for the third slide.</p>
+                                    <p>cumpra metas mensais e missões diárias para diminuir o consumo de energia</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/bannerPrincipal.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p>ganhe benefícios ao diminuir o consumo de energia mensal</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/bannerPrincipal.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p>diminua sua pegada de carbono</p>
                                 </div>
                             </div>
                         </div>
@@ -132,7 +145,7 @@
                 </div>
             </div>
         </section>
-        <section id="por-que-aderir">
+        <section id="por-que-aderir" class="mTsection">
             <div class="d-flex justify-content-center align-items-center">
                 <h2 class="textHighlight text-center">Como aderir?</h2>
             </div>
@@ -141,69 +154,104 @@
                 <p>A powerUP transforma seu
                     consumo elétrico, oferecendo clareza, economia e um estilo de vida mais sustentável.
                 </p>
-                <p>
+                <p class="mt-4">
                     Pronto para explorar as vantagens dessa tecnologia?
                 </p>
                 <div class="d-flex justify-content-center align-items-center">
-                    <button>otimizar energia</button>
+                    <button><a class="nav-link" href="#otimizar-energia">otimizar energia</a></button>
                 </div>
             </div>
         </section>
-        <section class="container">
-
-            <div class="d-flex justify-content-center align-items-center">
-                <div class="card text-center mb-3" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <section class="container mt-5">
+            <div class="container py-5">
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-md-3">
+                        <div class="card text-center ">
+                            <div
+                                class="card01 card-body card text-center d-flex flex-column align-items-center justify-content-center py-4">
+                                <h2 class="text-success">01</h2>
+                                <p class="card-text">benefício financeiro</p>
+                                <a href="#" class="btn btn-link text-success fw-bold">saiba mais
+                                    <span>&#8594;</span></a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card text-center mb-3" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <!-- Card 2 -->
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <div
+                                class="card-body card text-center d-flex flex-column align-items-center justify-content-center py-4">
+                                <h2 class="text-success">02</h2>
+                                <p class="card-text">controle total do seu consumo de energia</p>
+                                <a href="#" class="btn btn-link text-success fw-bold">saiba mais
+                                    <span>&#8594;</span></a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card text-center mb-3" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <!-- Card 3 -->
+                    <div class="col-md-3">
+                        <div class="card text-center bg-light border-0">
+                            <div
+                                class="card-body card text-center d-flex flex-column align-items-center justify-content-center py-4">
+                                <h2 class="text-success">03</h2>
+                                <p class="card-text">economize de forma divertida</p>
+                                <a href="#" class="btn btn-link text-success fw-bold">saiba mais
+                                    <span>&#8594;</span></a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card text-center mb-3" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <!-- Card 4 -->
+                    <div class="col-md-3">
+                        <div class="card text-center bg-warning">
+                            <div
+                                class="card-body card text-center d-flex flex-column align-items-center justify-content-center py-4">
+                                <h2 class="text-success">04</h2>
+                                <p class="card-text">acumule pontos e ganhe benefícios</p>
+                                <a href="#" class="btn btn-link text-success fw-bold">saiba mais
+                                    <span>&#8594;</span></a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card text-center mb-3" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <!-- Card 5 -->
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <div
+                                class="card-body card text-center d-flex flex-column align-items-center justify-content-center py-4">
+                                <h2 class="text-success">05</h2>
+                                <p class="card-text">faça parte da nossa comunidade</p>
+                                <a href="#" class="btn btn-link text-success fw-bold">saiba mais
+                                    <span>&#8594;</span></a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card text-center mb-3" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <!-- Card 6 -->
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <div
+                                class="card06 card-body card text-center d-flex flex-column align-items-center justify-content-center py-4">
+                                <h2 class="text-success">06</h2>
+                                <p class="card-text">conheça um novo estilo de vida</p>
+                                <a href="#" class="btn btn-link text-success fw-bold">saiba mais
+                                    <span>&#8594;</span></a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card text-center mb-3" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <!-- Card 7 (Wide Card) -->
+                    <div class="col-md-6">
+                        <div class="card text-center bg-white border-0 shadow ">
+                            <div
+                                class="card text-center d-flex flex-column align-items-center justify-content-center py-4">
+                                <p class="card-text fs-5 ">Uma experiência simples e moderna, com um app intuitivo feito
+                                    para facilitar sua vida.</p>
+                                <button>otimizar energia</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="quem-somos">
+        <section id="quem-somos" class="mTsection">
             <div class="d-flex justify-content-center align-items-center">
                 <h2 class="textHighlight text-center">quem somos?</h2>
             </div>
@@ -236,7 +284,7 @@
                 </div>
             </div>
         </section>
-        <section id="otimizar-energia">
+        <section id="otimizar-energia" class="mTsection future">
             <div>
                 <div>
                     <h2>Pronto para o futuro?</h2>
@@ -255,8 +303,6 @@
                 </div>
             </div>
         </section>
-
-
     </main>
 
 

@@ -16,10 +16,7 @@ body{
     font-style: normal;
 }
 
-.nav-link.active {
-    font-weight: bold;
-    color: #1ABC9C !important;
-}
+
 
 .bannerPrincipal{
     background-image: url('../img/bannerPrincipal.png');
@@ -42,19 +39,92 @@ body{
     font-style: normal;
     text-align: left;
   }
-
-  .textHighlight{
-    font-size: 1.5rem;
-    width: 80%;
+  h2{
+    color:#1ABC9C;
+    font-size: 2rem;
+    font-weight: 800;
+    font-style: normal;
   }
+
+ 
 
 button{
     background-color: #1ABC9C;
     border-radius: 2rem;
     border: none;
     padding: 0.25rem;
+    height: 48px;
+    width: 200px;
 }
 
   footer{
     background-color: #333333;
   }
+
+  .mTsection {
+    padding-top: 100px;
+}
+
+p{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+
+}
+
+.future{
+    height: 100vh;
+}
+.nav-link {
+    color: #333333 ; 
+}
+
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+.nav-link.active:last-child {
+    font-weight: bold;
+}
+
+
+.card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.card a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.bg-light {
+    background-color: #1ABC9C !important;
+}
+
+.bg-warning {
+    background-color: #FF6F3C !important;
+}
+
+.card01{
+    background-image: url('../img/card-01.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.card06{
+    background-image: url('../img/card-02.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.card{
+    height: 275px;
+}
