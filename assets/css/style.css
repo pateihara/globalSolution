@@ -8,11 +8,17 @@ nav{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 
 }
+
 body{
     font-family: "Mulish", serif;
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #1ABC9C !important;
 }
 
 .bannerPrincipal{
@@ -41,6 +47,13 @@ body{
     font-size: 1.5rem;
     width: 80%;
   }
+
+button{
+    background-color: #1ABC9C;
+    border-radius: 2rem;
+    border: none;
+    padding: 0.25rem;
+}
 
   footer{
     background-color: #333333;
