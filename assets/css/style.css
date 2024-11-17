@@ -59,6 +59,14 @@ button{
 
   footer{
     background-color: #333333;
+    height: 150px;
+    color:#fff;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    padding: 0; 
+    margin: 0; 
   }
 
   .mTsection {
@@ -73,8 +81,14 @@ p{
 }
 
 .future{
-    height: 100vh;
-}
+    height: 500px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    padding: 0; 
+    margin: 0; 
+  }
+
 .nav-link {
     color: #333333 ; 
 }
@@ -89,10 +103,84 @@ p{
 }
 
 
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%; 
+    transform: translateY(-50%); 
+    height: 50px;
+}
+
+/* Estilo do container para o flip */
+.card-container {
+    perspective: 1000px; /* Ativa o efeito 3D */
+    width: 100%; /* Largura total */
+    height: 275px; /* Altura do card */
+    position: relative; /* Garante o posicionamento correto */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Flip card */
+.card-flip {
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    transform-style: preserve-3d; /* Permite o flip em 3D */
+    transition: transform 0.6s ease-in-out; /* Suaviza o efeito de rotação */
+}
+
+/* Ativação do flip */
+.card-container.active .card-flip {
+    transform: rotateY(180deg); /* Roda o card */
+}
+
+/* Frente e Verso */
+.card-front,
+.card-back {
+    position: absolute; /* Ambos ocupam o mesmo espaço */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Oculta o lado contrário */
+    border-radius: 10px; /* Bordas arredondadas para ambos os lados */
+    transition: box-shadow 0.3s ease-in-out; /* Suaviza a sombra ao alternar */
+}
+.card-front {
+    background-color: #ffffff; /* Fundo da frente */
+    z-index: 2; /* Garante que a frente esteja visível inicialmente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra aplicada apenas à frente */
+}
+/* Verso do Card */
+.card-back {
+    transform: rotateY(180deg); /* Começa virado */
+    background-color: #f8f9fa; /* Fundo do verso */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none; /* Remove sombra do verso inicialmente */
+}
+
+
+/* Estado ativo: flip */
+.card-container.active .card-flip {
+    transform: rotateY(180deg); /* Roda o card */
+}
+/* Sombra visível apenas no lado ativo */
+.card-container.active .card-back {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao verso */
+}
+
+.card-container.active .card-front {
+    box-shadow: none; /* Remove sombra da frente */
+}
+/* Mantém o que você já possui */
 .card {
     border-radius: 10px;
     border: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 2rem;
 }
 
 .card h2 {
@@ -113,18 +201,78 @@ p{
     background-color: #FF6F3C !important;
 }
 
-.card01{
+.card01 {
     background-image: url('../img/card-01.png');
     background-size: cover;
     background-position: center;
+    color:#fff;
+}
+.card01 h2,.card01 a
+{
+    color:#fff !important;
 }
 
-.card06{
+.card06 {
     background-image: url('../img/card-02.png');
     background-size: cover;
     background-position: center;
+    color:#fff;
+}
+.card06 h2,
+.card06 a{
+    color:#fff !important;
+}
+.whiteCard{
+    color: #fff;
+}
+.whiteCard h2,
+.whiteCard a{
+    color:#fff !important;
 }
 
-.card{
+.card {
     height: 275px;
+}
+
+.bannerStudent{
+    background-color: #1ABC9C;
+}
+
+#quem-somos {
+    background: #1ABC9C; /* Cor de fundo */
+    color: #ffffff; /* Texto branco */
+}
+#quem-somos h2 {
+    color: #fff;
+}
+#quem-somos img {
+    border-radius: 50%;
+    object-fit: cover; 
+    border: 3px solid #ffffff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+#quem-somos h5 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+
+#pronto-futuro {
+    height: 100vh; /* Faz a seção ocupar a altura total da janela */
+}
+
+#pronto-futuro h2 {
+    font-size: 2.5rem;
+}
+
+#pronto-futuro .form-control {
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#pronto-futuro .btn-success {
+    border-radius: 10px;
+    font-weight: bold;
 }
