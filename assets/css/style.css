@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+}
+body{
+    font-family: "Mulish", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.bannerPrincipal{
+    background-image: url('../img/bannerPrincipal.png');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    
+}
+
+.bannerPrincipal .row {
+    min-height: 500px; /* Ou ajuste conforme necessário */
+  }
+
+  h1{
+    color: #fff;
+    font-size: 3rem;
+    font-family: "Mulish", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    text-align: left;
+  }
+
+  .textHighlight{
+    font-size: 1.5rem;
+    width: 80%;
+  }
+
+  footer{
+    background-color: #333333;
+  }
