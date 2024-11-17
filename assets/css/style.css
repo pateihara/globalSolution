@@ -16,37 +16,34 @@ body{
     font-style: normal;
 }
 
-
-
 .bannerPrincipal{
     background-image: url('../img/bannerPrincipal.png');
     background-size: cover;
     background-position: center;
     height: 50vh;
-    
 }
 
 .bannerPrincipal .row {
-    min-height: 500px; /* Ou ajuste conforme necessário */
-  }
+    min-height: 500px;
+}
 
-  h1{
-    color: #fff;
-    font-size: 3rem;
-    font-family: "Mulish", serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-    text-align: left;
-  }
-  h2{
-    color:#1ABC9C;
-    font-size: 2rem;
-    font-weight: 800;
-    font-style: normal;
-  }
+h1{
+color: #fff;
+font-size: 3rem;
+font-family: "Mulish", serif;
+font-optical-sizing: auto;
+font-weight: 800;
+font-style: normal;
+text-align: left;
+}
+h2{
+color:#1ABC9C;
+font-size: 2rem;
+font-weight: 800;
+font-style: normal;
+}
 
- 
+
 
 button{
     background-color: #1ABC9C;
@@ -57,19 +54,19 @@ button{
     width: 200px;
 }
 
-  footer{
-    background-color: #333333;
-    height: 150px;
-    color:#fff;
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-    text-align: center;
-    padding: 0; 
-    margin: 0; 
-  }
+footer{
+background-color: #333333;
+height: 150px;
+color:#fff;
+display: flex; 
+align-items: center; 
+justify-content: center;
+text-align: center;
+padding: 0; 
+margin: 0; 
+}
 
-  .mTsection {
+.mTsection {
     padding-top: 100px;
 }
 
@@ -87,7 +84,7 @@ p{
     justify-content: center;
     padding: 0; 
     margin: 0; 
-  }
+}
 
 .nav-link {
     color: #333333 ; 
@@ -239,8 +236,8 @@ p{
 }
 
 #quem-somos {
-    background: #1ABC9C; /* Cor de fundo */
-    color: #ffffff; /* Texto branco */
+    background: #1ABC9C;
+    color: #ffffff; 
 }
 #quem-somos h2 {
     color: #fff;
@@ -259,7 +256,7 @@ p{
 
 
 #pronto-futuro {
-    height: 100vh; /* Faz a seção ocupar a altura total da janela */
+    height: 100vh;
 }
 
 #pronto-futuro h2 {
