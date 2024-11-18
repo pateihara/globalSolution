@@ -4,8 +4,9 @@
 }
 
 nav{
-    background-color: #fff;
+    background-color: #00000055;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    height: 80px;
 
 }
 
@@ -14,12 +15,35 @@ body{
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
+    background-color: #f7f7f7;
+    background-image: linear-gradient(to top, rgba(32, 32, 32, 0.941), rgba(0, 0, 0, 0.925));
+}
+
+hr {
+    color: #1ABC9C;
+}
+
+::selection {
+    background-color: #FF6F3C;
+    color: black;
+}
+
+.navbar-brand {
+    margin-left: 20px;
 }
 
 .bannerPrincipal{
-    background-image: url('../img/bannerPrincipal.png');
+    background-image: url('../img/—Pngtree—abstract\ black\ background\ with\ glowing_5805862.jpg');
     background-size: cover;
     background-position: center;
+    height: 180vh;
+}
+
+.firstCall {
+height: 100vh;
+}
+
+.secondCall {
     height: 50vh;
 }
 
@@ -27,12 +51,41 @@ body{
     min-height: 500px;
 }
 
+.img-fluid {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.textBanner {
+    height: 30vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+
+.textBanner2 {
+    color: #fff;
+    margin: 5vh;
+    font-weight: 500;
+}
+
+.textHighlight {
+    color: #1ABC9C;
+    margin: 50px 0px;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.textEmphasis {
+    color: #FF6F3C;
+}
+
 h1{
 color: #fff;
-font-size: 3rem;
+font-size: 2.5rem;
 font-family: "Mulish", serif;
 font-optical-sizing: auto;
-font-weight: 800;
+font-weight: 700;
 font-style: normal;
 text-align: left;
 }
@@ -43,15 +96,19 @@ font-weight: 800;
 font-style: normal;
 }
 
+.textDescription {
+    font-weight: 500;
+}
 
 
 button{
-    background-color: #1ABC9C;
+    background-color: #FF6F3C;
     border-radius: 2rem;
     border: none;
     padding: 0.25rem;
+    margin: 20px;
     height: 48px;
-    width: 200px;
+    width: 50%;
 }
 
 footer{
@@ -67,7 +124,7 @@ margin: 0;
 }
 
 .mTsection {
-    padding-top: 100px;
+    padding: 50px;
 }
 
 p{
@@ -78,25 +135,26 @@ p{
 }
 
 .future{
-    height: 500px;
+    height: 90vh;
     display: flex; 
     align-items: center; 
-    justify-content: center;
-    padding: 0; 
-    margin: 0; 
+    justify-content: center; 
 }
 
 .nav-link {
-    color: #333333 ; 
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 
 .nav-link.active {
-    font-weight: bold;
+    font-weight: 800;
+    color: #FF6F3C !important;
 }
 
 .nav-link.active:last-child {
-    font-weight: bold;
+    font-weight: 800;
 }
 
 
@@ -105,6 +163,23 @@ p{
     top: 50%; 
     transform: translateY(-50%); 
     height: 50px;
+}
+
+.text-success {
+    font-size: 2.5rem;
+    color: #1ABC9C !important;
+}
+
+.card-text {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 25px;
+}
+
+.card-text-back {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 22px ;
 }
 
 /* Estilo do container para o flip */
@@ -135,6 +210,7 @@ p{
     position: absolute; /* Ambos ocupam o mesmo espaço */
     top: 0;
     left: 0;
+    padding: 10px;
     width: 100%;
     height: 100%;
     backface-visibility: hidden; /* Oculta o lado contrário */
@@ -198,6 +274,7 @@ p{
     background-color: #FF6F3C !important;
 }
 
+
 .card01 {
     background-image: url('../img/card-01.png');
     background-size: cover;
@@ -231,16 +308,14 @@ p{
     height: 275px;
 }
 
-.bannerStudent{
-    background-color: #1ABC9C;
+.btn-success {
+    background-color: #FF6F3C;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 #quem-somos {
-    background: #1ABC9C;
-    color: #ffffff; 
-}
-#quem-somos h2 {
-    color: #fff;
+    background-color: transparent !important;
 }
 #quem-somos img {
     border-radius: 50%;
@@ -272,4 +347,23 @@ p{
 #pronto-futuro .btn-success {
     border-radius: 10px;
     font-weight: bold;
+}
+
+.bgImg {
+    background-image: url('../img/—Pngtree—abstract\ black\ background\ with\ glowing_5805862.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 1000px) {
+    .textHighlight {
+        font-size: 2rem;
+    }
+    .textDescription {
+        font-size: 1.2rem;
+    }
+    .card-text-back {
+        font-size: 0.7rem;
+        font-weight: bold;
+    }
 }
