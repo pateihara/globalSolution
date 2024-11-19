@@ -36,12 +36,26 @@ hr {
     background-image: url('../img/—Pngtree—abstract\ black\ background\ with\ glowing_5805862.jpg');
     background-size: cover;
     background-position: center;
-    height: 180vh;
 }
 
 .firstCall {
-height: 100vh;
+    height: 100vh; /* Garante que o contêiner ocupe toda a altura da tela */
+    position: relative; /* Necessário para o posicionamento absoluto do "saiba mais" */
 }
+
+.firstCall a {
+    position: absolute;
+    bottom: 20px; /* Distância do fundo da tela */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta para ficar perfeitamente centralizado */
+    margin: 0; /* Remove margens padrão */
+    font-size: 1.2rem; /* Ajuste o tamanho do texto */
+    color: white; /* Ajuste de cor para contraste */
+    text-align: center; /* Alinha o texto ao centro */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Mantém o peso da fonte, conforme seu código */
+}
+
 
 .secondCall {
     height: 50vh;
@@ -105,10 +119,15 @@ button{
     background-color: #FF6F3C;
     border-radius: 2rem;
     border: none;
-    padding: 0.25rem;
-    margin: 20px;
+    padding: 0rem;
+    margin: 0px;
     height: 48px;
     width: 50%;
+    font-weight: 800;
+}
+button:hover{
+    background-color: #1ABC9C;
+
 }
 
 footer{
@@ -174,6 +193,7 @@ p{
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 25px;
+    color:black;
 }
 
 .card-text-back {
@@ -279,29 +299,29 @@ p{
     background-image: url('../img/card-01.png');
     background-size: cover;
     background-position: center;
-    color:#fff;
+    color: black !important;
 }
 .card01 h2,.card01 a
 {
-    color:#fff !important;
+    color: black !important;
 }
 
 .card06 {
     background-image: url('../img/card-02.png');
     background-size: cover;
     background-position: center;
-    color:#fff;
+    color: black !important;
 }
 .card06 h2,
 .card06 a{
-    color:#fff !important;
+    color: black !important;
 }
 .whiteCard{
-    color: #fff;
+    color: black !important;
 }
 .whiteCard h2,
 .whiteCard a{
-    color:#fff !important;
+    color: black !important;
 }
 
 .card {
@@ -365,5 +385,74 @@ p{
     .card-text-back {
         font-size: 0.7rem;
         font-weight: bold;
+    }
+}
+
+.blackBG{
+    background-color: black !important;
+    color: white;
+    transition: background-color 0.1s ease; 
+}
+
+.navbar-collapse.show {
+    max-height: 100vh; 
+    background-color: black; 
+    color: white; 
+    padding: 0; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 1050;
+}
+
+.navbar-collapse {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, background-color 0.3s ease;
+    background-color: transparent; 
+}
+
+.navbar-nav {
+    margin: 0;
+    padding: 1rem; 
+}
+
+.navbar-toggler{
+    position: relative; 
+    z-index: 1100; 
+}
+/* Para links da navbar */
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:active {
+    color: white !important; /* Altera a cor do texto do link para branco */
+    outline: none; /* Remove o contorno de foco padrão */
+}
+
+/* Caso queira mudar a cor de fundo do link quando estiver em foco */
+.navbar-nav .nav-link:focus {
+    background-color: rgba(255, 255, 255, 0.2); /* Exemplo de fundo semitransparente */
+}
+
+/* Para o botão da navbar, caso esteja usando o foco nele também */
+.navbar-toggler:focus {
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.5); /* Coloca um efeito de sombra branca */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FF6F3C !important; /* Define a cor laranja para o hover */
+}
+a:hover{
+    color: #FF6F3C !important; /* Define a cor laranja para o hover */
+
+}
+
+@media (min-width: 992px) {
+    .navbar-collapse {
+        max-height: none;
+        overflow: visible;
+        background-color: transparent;
+        position: relative;
     }
 }

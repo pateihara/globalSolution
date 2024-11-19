@@ -39,3 +39,35 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.querySelector(".navbar");
+  const navbarCollapse = document.querySelector(".navbar-collapse");
+  const breakpoint = 992; // Ponto de colapso para lg no Bootstrap
+
+  // Função para verificar o estado da janela
+  function checkNavbarState() {
+    if (window.innerWidth < breakpoint) {
+      navbar.classList.add("blackBG");
+    } else {
+      navbar.classList.remove("blackBG");
+      navbarCollapse.classList.remove("show"); // Garante que o menu colapsado feche
+    }
+  }
+
+  // Monitora o estado de abertura do menu hamburguer
+  navbarCollapse.addEventListener("show.bs.collapse", function () {
+    navbar.classList.add("blackBG");
+  });
+
+  navbarCollapse.addEventListener("hide.bs.collapse", function () {
+    if (window.innerWidth < breakpoint) {
+      navbar.classList.remove("blackBG");
+    }
+  });
+
+  // Verifica o estado inicial
+  checkNavbarState();
+
+  // Verifica sempre que a janela for redimensionada
+  window.addEventListener("resize", checkNavbarState);
+});
